@@ -12,10 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5&pjy2bzxcjx%=m^6js-w2^trkn27eti^2+ql$9vuc(&_+0$s+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'localhost',
-                 'post-service-ideaslibrary.ue.r.appspot.com/', 'post-service-ideaslibrary.ue.r.appspot.com', '10.158.0.2']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -72,7 +71,7 @@ WSGI_APPLICATION = 'post_service.wsgi.application'
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': ' post-service-bd ',
-#         'HOST': '/cloudsql/post-service-ideaslibrary:us-east1:post-service-bd',
+#         'HOST': '/cloudsql/metal-calculus-411518:southamerica-east1:post-service-bd',
 #         'USER': 'admin',
 #         'PASSWORD': 'admin',
 #         # 'OPTIONS': {

@@ -1,3 +1,1 @@
-from post_service.wsgi import application
-
-app = application
+from ideas_library.wsgi import application
