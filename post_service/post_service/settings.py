@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-5&pjy2bzxcjx%=m^6js-w2^trkn27eti^2+ql$9vuc(&_+0$s+
 DEBUG = True
 
 ALLOWED_HOSTS = ['*', '127.0.0.1', 'localhost',
-                 'post-service-ideaslibrary.ue.r.appspot.com/', 'post-service-ideaslibrary.ue.r.appspot.com']
+                 'post-service-ideaslibrary.ue.r.appspot.com/', 'post-service-ideaslibrary.ue.r.appspot.com', '10.158.0.2']
 
 
 # Application definition
@@ -68,25 +68,25 @@ WSGI_APPLICATION = 'post_service.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': ' post-service-bd ',
-        'HOST': '/cloudsql/post-service-ideaslibrary:us-east1:post-service-bd',
-        'USER': 'admin',
-        'PASSWORD': 'admin',
-        # 'OPTIONS': {
-        #     'charset': 'utf8mb4',
-        # },
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': ' post-service-bd ',
+#         'HOST': '/cloudsql/post-service-ideaslibrary:us-east1:post-service-bd',
+#         'USER': 'admin',
+#         'PASSWORD': 'admin',
+#         # 'OPTIONS': {
+#         #     'charset': 'utf8mb4',
+#         # },
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
