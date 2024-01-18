@@ -13,7 +13,7 @@ env_file = os.path.join(BASE_DIR, ".env")
 SECRET_KEY = 'django-insecure-5&pjy2bzxcjx%=m^6js-w2^trkn27eti^2+ql$9vuc(&_+0$s+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -64,8 +64,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'post_service.wsgi.application'
-
-
 
 
 DATABASES = {
